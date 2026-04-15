@@ -1,0 +1,10 @@
+{
+  "name": "dashboard-operativo-cp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo static-build",
+    "deploy": "echo deploy-via-github-pages"
+  }
+}
