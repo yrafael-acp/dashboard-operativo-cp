@@ -2,7 +2,7 @@ window.Api = (() => {
   const baseUrl = window.APP_CONFIG.SCRIPT_URL;
 
   function assertConfigured() {
-    if (!baseUrl || baseUrl.includes('PEGAR_AQUI_TU_WEB_APP_URL')) {
+    if (!baseUrl || baseUrl.includes('https://script.google.com/macros/s/AKfycbyPTKRi6vDUxH9eIQNwh8XZCZAucg44Dr0TvywARJ64bUcYCVfmkPnk9nsSjf6g5DyxoA/exec')) {
       throw new Error('Configura APP_CONFIG.SCRIPT_URL con la URL del Web App de Apps Script');
     }
   }
