@@ -1,6 +1,6 @@
 window.APP_CONFIG = Object.freeze({
   APP_NAME: 'DASHBOARD OPERATIVO CP',
-  SCRIPT_URL: 'PEGAR_AQUI_TU_WEB_APP_URL',
+  SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbyPTKRi6vDUxH9eIQNwh8XZCZAucg44Dr0TvywARJ64bUcYCVfmkPnk9nsSjf6g5DyxoA/exec',
   PAGE_SIZE: 50,
   FETCH_TIMEOUT_MS: 30000,
   DEBUG: false,
