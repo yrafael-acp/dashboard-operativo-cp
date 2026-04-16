@@ -1,0 +1,132 @@
+:root {
+  --cp-verde: #0f6b2d;
+  --cp-amarillo: #f3c623;
+  --cp-bg: #eef1f4;
+}
+
+body {
+  background: var(--cp-bg);
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: var(--cp-verde);
+  border-bottom: 4px solid var(--cp-amarillo);
+}
+
+.card-soft {
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.kpi-card {
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.kpi-title {
+  font-size: 0.72rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.kpi-value {
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.table-container {
+  height: 420px;
+  overflow: auto;
+  border: 1px solid #dbe1e7;
+  border-radius: 12px;
+  background: #fff;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.status-badge {
+  font-size: 0.72rem;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-weight: 700;
+}
+
+.bg-disponible {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.bg-ocupado {
+  background: #cfe2ff;
+  color: #084298;
+}
+
+.bg-sobrestock {
+  background: #f8d7da;
+  color: #842029;
+}
+
+#loader-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.84);
+  z-index: 1055;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.toast-container {
+  z-index: 2000;
+}
+
+.nav-pills .nav-link {
+  font-weight: 700;
+  color: var(--cp-verde);
+  border: 1px solid rgba(15, 107, 45, 0.3);
+}
+
+.nav-pills .nav-link.active {
+  background: var(--cp-verde);
+}
+
+.chart-wrap {
+  min-height: 320px;
+  position: relative;
+}
+
+.zone-card .progress {
+  height: 8px;
+}
+
+.table-input {
+  min-width: 160px;
+}
+
+.table-actions {
+  min-width: 110px;
+}
+
+@media (max-width: 768px) {
+  .chart-wrap {
+    min-height: 260px;
+  }
+
+  .table-container {
+    height: 360px;
+  }
+}
